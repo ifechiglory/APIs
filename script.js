@@ -24,6 +24,7 @@ const droppunchline = () => {
     punchline.innerHTML = joke.punchline;
     img.setAttribute('src', 'https://i.pinimg.com/originals/af/f5/a7/aff5a72c04f0ede20844215f689f70e2.gif');
     punchlineBtn.style.display = 'none';
+    setupBtn.style.display = 'none';
     reset.classList.remove('reset');
 }
 
