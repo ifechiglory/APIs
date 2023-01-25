@@ -17,7 +17,7 @@ const tellajoke = () => {
             (joke = data)
         )
     )
-    .catch(error => console.log(error));
+    setupBtn.setAttribute('style', 'display: none');
 }
 
 const droppunchline = () => {
