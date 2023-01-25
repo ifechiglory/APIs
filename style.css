@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* p{
+    display: inline-block;
+} */
+
+button{
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff
+}
+
+button:hover{
+    background-color:forestgreen;
+}
+
+#punchlinebtn{
+    display: none;
+}
+
+.reset{
+    display: none;
+}
+/* .visible{
+    display: inline-block;
+} */
