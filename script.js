@@ -46,7 +46,7 @@ reset.addEventListener('click', e => {
     punchline.innerHTML = '';
     setup.innerHTML = '';
     tellajoke();
-    img.setAttribute('src', 'https://monophy.com/media/hVn3MCkffhr9ZqyFie/monophy.gif');
+    img.setAttribute('src', 'https://i.pinimg.com/originals/5d/da/3c/5dda3c4ddd44be94ffb984f88e74e23b.gif');
     punchlineBtn.style.display = 'none';
     setupBtn.setAttribute('style', 'display: none');
     reset.classList.add('reset');  
