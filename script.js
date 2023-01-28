@@ -4,15 +4,18 @@ var punchlineBtn = document.querySelector('#punchlinebtn');
 var img = document.querySelector('.img');
 var reset = document.querySelector('.reset');
 var setupBtn = document.querySelector('#setupBtn');
+var loader = document.querySelector('.loader');
 
 var joke = {}
 
 
 const tellajoke = () => {
+    loader.style.display = 'inline-block';
     fetch('https://official-joke-api.appspot.com/random_joke')
     .then(response => response.json())
     .then(
         data => ( 
+            loader.style.display = 'none',
             (setup.innerHTML = data.setup, punchlineBtn.style.display ='inline-block'), 
             (joke = data)
         )
@@ -41,6 +44,7 @@ punchlineBtn.addEventListener('click', e => {
 reset.addEventListener('click', e => {
     e.preventDefault();
     punchline.innerHTML = '';
+    setup.innerHTML = '';
     tellajoke();
     img.setAttribute('src', 'https://monophy.com/media/hVn3MCkffhr9ZqyFie/monophy.gif');
     punchlineBtn.style.display = 'none';
